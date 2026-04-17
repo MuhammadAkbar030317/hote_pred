@@ -1,0 +1,22 @@
+# Data files
+*.csv
+*.pkl
+*.joblib
+Data/
+
+venv/
+__pycache__/
+*.pyc
+.env
+
+Data/Raw/*
+Data/Processed/*
+Data/Engineered/*
+
+Models/*
+
+
+!Models/best/best_model.joblib
+
+.DS_Store
+.ipynb_checkpoints/
