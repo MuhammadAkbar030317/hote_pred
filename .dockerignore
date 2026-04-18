@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+myvenv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & models (modelni image ichiga qasddan qo‘shmaslik uchun)
+Data/
+Models/
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
