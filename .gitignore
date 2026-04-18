@@ -13,10 +13,10 @@ Data/Raw/*
 Data/Processed/*
 Data/Engineered/*
 
+# Models - faqat best model saqlansin
 Models/*
-
-
-!Models/best/best_model.joblib
+!Models/best/
+!Models/best/best_model_pipeline.joblib
 
 .DS_Store
 .ipynb_checkpoints/

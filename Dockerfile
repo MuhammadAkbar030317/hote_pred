@@ -1,8 +1,8 @@
 # 1️⃣ Base image
-FROM python:3.11-slim
+FROM python:3.10-slim
 
 # 2️⃣ Work directory
-WORKDIR /App
+WORKDIR /app
 
 # 3️⃣ System dependencies (minimal)
 RUN apt-get update && apt-get install -y \
@@ -17,9 +17,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # 6️⃣ Project files copy
 COPY . .
+# ✅ Environment settings (ixtiyoriy lekin tavsiya)
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # 7️⃣ Expose FastAPI port
 EXPOSE 8000
 
 # 8️⃣ Run FastAPI
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "App.main:app", "--host", "0.0.0.0", "--port", "8000"]

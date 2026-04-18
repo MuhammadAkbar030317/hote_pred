@@ -10,9 +10,8 @@ myvenv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data & models (modelni image ichiga qasddan qo‘shmaslik uchun)
+# Data (faqat data o'chirildi)
 Data/
-Models/
 
 # Git
 .git/
