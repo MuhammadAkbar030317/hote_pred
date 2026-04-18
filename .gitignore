@@ -14,8 +14,7 @@ Data/Engineered/*
 
 # Models
 Models/*
-!Models/best/
-!Models/best/best_model_pipeline.joblib
+
 
 .DS_Store
 .ipynb_checkpoints/
