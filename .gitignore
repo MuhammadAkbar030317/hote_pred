@@ -1,8 +1,6 @@
 # Data files
 *.csv
 *.pkl
-*.joblib
-
 Data/
 
 venv/
@@ -14,7 +12,7 @@ Data/Raw/*
 Data/Processed/*
 Data/Engineered/*
 
-# Models - faqat best model saqlansin
+# Models
 Models/*
 !Models/best/
 !Models/best/best_model_pipeline.joblib
