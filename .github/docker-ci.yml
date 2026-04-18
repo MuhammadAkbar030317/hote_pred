@@ -29,13 +29,13 @@ jobs:
           push: true
           pull: true
           tags: |
-            ma030317/hotel-api:latest
-            ma030317/hotel-api:${{ github.sha }}
+            abdurayimov030317/hotel-api:latest
+            abdurayimov030317/hotel-api:${{ github.sha }}
 
       - name: Run container
         run: |
           docker run -d --name test-container -p 8000:8000 \
-            ma030317/hotel-api:latest
+            abdurayimov030317/hotel-api:latest
           sleep 10
 
       - name: Health check
